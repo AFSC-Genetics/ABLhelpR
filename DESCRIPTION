@@ -1,0 +1,12 @@
+Package: ABLhelpR
+Type: Package
+Title: Helper functions for doing small tasks AFSC ABL data.
+Version: 0.1.0
+Author: Patrick Barry
+Maintainer: Patrick Barry <Patrick.Barry@noaa.gov>
+Description: A collection of functions that don't have a home, but are useful to have access to across multiple machines.
+License: use_mit_license()
+Encoding: UTF-8
+LazyData: true
+Imports:
+    tidyverse

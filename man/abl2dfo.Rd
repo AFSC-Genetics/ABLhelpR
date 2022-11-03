@@ -58,8 +58,5 @@ Patrick Barry
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-ABL2DFO(Infile = "./Chum_2010_ABL.csv",
-        GenoStartCol = 2,
-        AlleleConversions = "./ChumAlleleConversion.csv",
-        Outfile = "./Chum_2010_DFO.csv",
-        rows2skip=0)
+abl2dfo(Infile = "./Chum_2010_ABL.csv",GenoStartCol = 2,AlleleConversions = "./ChumAlleleConversion.csv",Outfile = "./Chum_2010_DFO.csv",rows2skip=0)
+}

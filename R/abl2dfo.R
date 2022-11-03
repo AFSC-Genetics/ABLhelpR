@@ -5,7 +5,7 @@
 #' @examples
 #' ABL2DFO(Infile = "./Chum2010genosABL.csv", GenoStartCol = 2, AlleleConversions = "./ChumAlleleConversion.csv", Outfile = "./Chum2010genosDFO.csv", rows2skip=0)
 #' @export
-ABL2DFO <- function(Infile,
+abl2dfo <- function(Infile,
                     GenoStartCol,
                     AlleleConversions,
                     Outfile,

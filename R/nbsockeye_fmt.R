@@ -5,7 +5,7 @@
 #' @examples
 #' NBsockeye_fmt(infile = "./DNA0047.xlsx")
 #' @export
-NBsockeye_fmt <- function(infile,
+nbsockeye_fmt <- function(infile,
                       outfile){
 
   if(file.exists(infile)){

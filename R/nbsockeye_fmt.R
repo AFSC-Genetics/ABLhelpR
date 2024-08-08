@@ -15,10 +15,18 @@ nbsockeye_fmt <- function(infile,
   }
 
   if(!exists("outfile")){
-    cat(paste("No outfile name given. Printing results to: ",
-              gsub(pattern="\\.",
+    cat(paste("No outfile name given. Printing results to: ./",
+              gsub(pattern="\\./",
+                   replacement= "",
+                   infile) %>% gsub(pattern="\\.|\\s",
                    replacement= "_",
-                   infile), ".csv",sep=""))
+                   .), ".csv",sep=""))
+    outfile <- paste("./",
+                     gsub(pattern="\\./",
+                          replacement= "",
+                          infile) %>% gsub(pattern="\\.|\\s",
+                                           replacement= "_",
+                                           .), ".csv",sep="")
   } else {
     outfile <- file.path(outfile)
   }
